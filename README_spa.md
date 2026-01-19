@@ -46,27 +46,29 @@ No hay ninguna filiación con los enlaces indicados. Solo se proporciona,a modo 
 | Parte | Cant. | Coste | Origen |   Notas   |
 |-------|-------|-------|--------|-----------|
 
-**Consejos de montaje**
+## 🛠 Instrucciones de Montaje
+
+Sigue estos pasos para ensamblar tu Kapybara-PCB:
 
 ⚠️ Nunca enciendas el nodo sin antena conectada. Puedes quemar el módulo LoRa.
 - Comprueba que el microcontrolador es funcional:
-  - Actualiza su bootloader a la versión 0.8 o superior si fuera necesario. [Bootloader 0.9.2](update-nice_nano_bootloader-0.9.2_nosd.uf2)
-  - Instala el firmware de [Meshtastic](https://flasher.meshtastic.org)
+- Actualiza su bootloader a la versión 0.8 o superior si fuera necesario. [Bootloader 0.9.2](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases/download/0.9.2/update-nice_nano_bootloader-0.9.2_nosd.uf2)
+- Instala el firmware de [Meshtastic](https://flasher.meshtastic.org)
 
 Se supone que tienes cierta experiencia soldando componentes electrónicos.
-1 Suelda primero los pequeños componentes SMD, como resistencias, condensadores, pulsadores, Mosfet y TLV
-2 Después suelda el microcontrolador y el módulo LoRa
-3 Conecta la antena (una pequeña será suficiente temporalmente) y alimenta la MCU por el puerto USB.
-4 Comprueba que el nodo arranca bien, que puedes conectarte desde el móvil por BLE, y que puede recibir/enviar mensajes.
-5 Si todo lo anterior es correcto, sigue con el montaje.
-6 Suelda el portafusibles y fusible o puentea los pads del fusible si no lo vas a montar.
-7 Suelda el BMS, soporte de la batería e interruptores.
-8 Suelda el INA3221 o haz un puente entre los pads (+) y (-) del canal 3 --> añadir llínea trazos a PCB o img ejemplo
-9 Asegurate que no está el nodo alimentado por USB. Inserta la batería 18650 y conecta el interruptor de alimentación en "ON".
-10 Comprueba nuevamente el punto 4. Apaga el nodo y quita la batería.
-11 Sigue con el montaje. Suelda el MPPT CN3791. Si no has montado el diodo D1 haz un puente. Conecta el panel solar a su bornero y comprueba su funcionamiento. Apaga el nodo y quita la batería.
-12 Suelda el módulo de lecturas medioambientales y comprueba su funcionamiento. Apaga el nodo y quita la batería.
-13 Suelda el resto de componentes opcionales y comprueba su funcionamiento.
+1. Suelda primero los pequeños componentes SMD, como resistencias, condensadores, pulsadores, Mosfet y TLV
+2. Después suelda el microcontrolador y el módulo LoRa. Asegúrate de que la orientación sea correcta según la serigrafía.
+3. Conecta la antena (una pequeña será suficiente temporalmente) y alimenta la MCU por el puerto USB.
+4. Comprueba que el nodo arranca bien, que puedes conectarte desde el móvil por BLE, y que puede recibir/enviar mensajes.
+5. Si todo lo anterior es correcto, sigue con el montaje.
+6. Suelda el portafusibles y fusible o puentea los pads del fusible si no lo vas a montar.
+7. Suelda el BMS, soporte de la batería e interruptores.
+8. Suelda el INA3221 o haz un puente entre los pads (+) y (-) del canal 3 --> añadir llínea trazos a PCB o img ejemplo
+9. Asegurate que no está el nodo alimentado por USB. Inserta la batería 18650 y conecta el interruptor de alimentación en "ON".
+10. Comprueba nuevamente el punto 4. Apaga el nodo y quita la batería.
+11. Sigue con el montaje. Suelda el MPPT CN3791. Si no has montado el diodo D1 haz un puente. Conecta el panel solar a su bornero y comprueba su funcionamiento. Apaga el nodo y quita la batería.
+12. Suelda el módulo de lecturas medioambientales y comprueba su funcionamiento. Apaga el nodo y quita la batería.
+13. Suelda el resto de componentes opcionales y comprueba su funcionamiento.
 
 **Aviso legal**
 - Los componentes de software de [Meshtastic](https://meshtastic.org/) se publican bajo diversas licencias. Consulte [GitHub](https://github.com/meshtastic) para obtener más información.
