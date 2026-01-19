@@ -1,37 +1,37 @@
-# Kapybara-PCB for Meshtastic
-Modular PCB designed for Meshtastic projects, sized 120x70 mm, to be mounted as a standalone solar node in an outdoor enclosure (AliExpress box). Many modules are optional, at the user's discretion.
+# Kapybara-PCB para Meshtastic
+Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 70 mm, para montaje como nodo solar independiente en una carcasa exterior (caja de AliExpress). Muchos módulos son opcionales, a elección del usuario.
 
-## License
+## Licencia
 
-This project is licensed under the **CERN Open Hardware Licence Version 2 - Strongly Permissive (CERN-OHL-S)**.
+Este proyecto está licenciado bajo la **Licencia de Hardware Abierto CERN Versión 2 - Fuertemente Permisiva (CERN-OHL-S)**.
 
-### What does this mean?
-- **Sharing:** You are welcome to download, modify, and manufacture this PCB.
-- **Attribution:** You must give appropriate credit to the original author (mpelli-Git).
-- **Reciprocity:** If you make modifications or improvements to the design and distribute them, you **must** license your contributions under the same CERN-OHL-S license. This ensures that the entire community benefits from any improvements.
+### ¿Qué quiere decir esto?
+- **Compartir:** Puedes descargar, modificar y fabricar esta PCB.
+- **Atribución:** Debes dar el crédito correspondiente al autor original (mpelli-Git).
+- **Reciprocidad:** Si realizas modificaciones o mejoras al diseño y las distribuyes, **debes** licenciar tus contribuciones bajo la misma licencia CERN-OHL-S. Esto garantiza que toda la comunidad se beneficie de las mejoras.
 
-You can find the full text of the license in the [LICENSE](LICENSE) file or visit [https://ohwr.org/cern_ohl_s_v2.txt](https://ohwr.org/cern_ohl_s_v2.txt) for more details.
+Puede encontrar el texto completo de la licencia en el archivo [LICENSE](LICENSE) o visitar [https://ohwr.org/cern_ohl_s_v2.txt](https://ohwr.org/cern_ohl_s_v2.txt) para más detalles.
 
-## Description
+## Descripción
 
-Modular PCB designed for Meshtastic projects, sized 120x70 mm, to be mounted as a standalone solar node in an outdoor enclosure (AliExpress box item 1005007587120013). Many modules are optional, at the user's discretion.
+Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 70 mm, para montaje como nodo solar independiente en una carcasa exterior (artículo de caja de AliExpress 1005007587120013). Muchos módulos son opcionales, a elección del usuario.
 
-**Basic system**
-- MCU: ProMicro Nice!nano compatible nRF52840
-- LoRa module: HT-RA62 Lora SX1262
-- Battery charge ctrl: CN3791 6V solar MPPT
-- Battery: 18650 with PCB case holder SMD or THT opts.
-- BMS, two op: a) PCB front, if the battery holder allows b) PCB back
-- AliExpress box: item 1005007587120013 [AE box model grey 150x100x70](https://aliexpress.com/item/1005007587120013.html)
-- Solar panel: use one of 6V and at least 1.5 W. I'm using [AE solar panel](https://es.aliexpress.com/item/1005009983374214.html)
+**Sistema básico**
+- MCU: ProMicro Nice!nano compatible con nRF52840
+- Módulo LoRa: HT-RA62 Lora SX1262
+- Control de carga de batería: CN3791 6 V MPPT solar
+- Batería: 18650 con soporte para PCB, opciones SMD o THT.
+- BMS, dos opciones: a) PCB frontal, si el soporte de la batería lo permite, b) PCB posterior.
+- Caja de AliExpress: artículo 1005007587120013 [Modelo de caja AE gris 150x100x70](https://aliexpress.com/item/1005007587120013.html)
+- Panel solar: usar uno de 6 V y al menos 1,5 W. Estoy usando un panel solar AE.
 
-**Optional**
-- Power: SMD fuse, for power supply protection, with SMD fuse holder.
-- Power percentage: R1+R2 for ADC MCU measurement of battery voltage
-- Power telemetry: INA3221 3 channels
-- Battery voltage superv.: TLV840 to reset MCU if undervoltage and mitigate brownouts
-- Environmental telemetry, two op.: a) BME280 3.3V b) AHT20-BMP280
-- GPS module: ATGM336H, for node time synchronization, with Mosfet control
-- OLED display: female connector for e.g. SSD1306
+**Opcional**
+- Alimentación: Fusible SMD para protección de la fuente de alimentación, con portafusibles SMD.
+- Porcentaje de potencia: R1+R2 para medición del voltaje de la batería por el ADC MCU.
+- Telemetría de potencia: INA3221 de 3 canales.
+- Supervisión del voltaje de la batería: TLV840 para reiniciar el MCU en caso de subtensión y mitigar caídas de tensión.
+- Telemetría ambiental, dos opciones: a) BME280 3.3 V b) AHT20-BMP280.
+- Módulo GPS: ATGM336H para sincronización horaria de nodos, con control MOSFET.
+- Pantalla OLED: conector hembra para, por ejemplo, SSD1306.
 
 [⬅️ Volver al menú principal](README.md)
