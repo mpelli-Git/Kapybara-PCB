@@ -27,11 +27,51 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 
 **Opcional**
 - Alimentación: Fusible SMD para protección de la fuente de alimentación, con portafusibles SMD.
-- Porcentaje de potencia: R1+R2 para medición del voltaje de la batería por el ADC MCU.
-- Telemetría de potencia: INA3221 de 3 canales.
+- Porcentaje de batería: R1+R2 para medición del voltaje de la batería por el ADC MCU.
+- Filtraje: Los condensadores C1 y C2 no son necesarios, pero se reserva este espacio en la PCB por si conviniera filtrar tensión de alimentación.
+- Telemetría de potencia: INA3221 medidor de corriente y voltaje de 3 canales.
 - Supervisión del voltaje de la batería: TLV840 para reiniciar el MCU en caso de subtensión y mitigar caídas de tensión.
-- Telemetría ambiental, dos opciones: a) BME280 3.3 V b) AHT20-BMP280.
+- Telemetría ambiental, sensores de temperatura, humedad y presión; dos opciones: a) BME280 3.3 V b) AHT20-BMP280.
 - Módulo GPS: ATGM336H para sincronización horaria de nodos, con control MOSFET.
 - Pantalla OLED: conector hembra para, por ejemplo, SSD1306.
+
+**Intrucciones para solicitar PCB**
+
+Puedes pedir las PCBs directamente en jlcpcb.com utilizando el archivo gerber de este repositorio
+
+**Lista de materiales (BOM)**
+
+No hay ninguna filiación con los enlaces indicados. Solo se proporciona,a modo de ejemplo, para facilitar la selección de componentes.
+
+| Parte | Cant. | Coste | Origen |   Notas   |
+|-------|-------|-------|--------|-----------|
+
+**Consejos de montaje**
+
+⚠️ Nunca enciendas el nodo sin antena conectada. Puedes quemar el módulo LoRa.
+- Comprueba que el microcontrolador es funcional:
+  - Actualiza su bootloader a la versión 0.8 o superior si fuera necesario. [Bootloader 0.9.2](update-nice_nano_bootloader-0.9.2_nosd.uf2)
+  - Instala el firmware de [Meshtastic](https://flasher.meshtastic.org)
+
+Se supone que tienes cierta experiencia soldando componentes electrónicos.
+1 Suelda primero los pequeños componentes SMD, como resistencias, condensadores, pulsadores, Mosfet y TLV
+2 Después suelda el microcontrolador y el módulo LoRa
+3 Conecta la antena (una pequeña será suficiente temporalmente) y alimenta la MCU por el puerto USB.
+4 Comprueba que el nodo arranca bien, que puedes conectarte desde el móvil por BLE, y que puede recibir/enviar mensajes.
+5 Si todo lo anterior es correcto, sigue con el montaje.
+6 Suelda el portafusibles y fusible o puentea los pads del fusible si no lo vas a montar.
+7 Suelda el BMS, soporte de la batería e interruptores.
+8 Suelda el INA3221 o haz un puente entre los pads (+) y (-) del canal 3 --> añadir llínea trazos a PCB o img ejemplo
+9 Asegurate que no está el nodo alimentado por USB. Inserta la batería 18650 y conecta el interruptor de alimentación en "ON".
+10 Comprueba nuevamente el punto 4. Apaga el nodo y quita la batería.
+11 Sigue con el montaje. Suelda el MPPT CN3791. Si no has montado el diodo D1 haz un puente. Conecta el panel solar a su bornero y comprueba su funcionamiento. Apaga el nodo y quita la batería.
+12 Suelda el módulo de lecturas medioambientales y comprueba su funcionamiento. Apaga el nodo y quita la batería.
+13 Suelda el resto de componentes opcionales y comprueba su funcionamiento.
+
+**Aviso legal**
+- Los componentes de software de [Meshtastic](https://meshtastic.org/) se publican bajo diversas licencias. Consulte [GitHub](https://github.com/meshtastic) para obtener más información.
+- No se ofrece garantía; use este diseño bajo su propia responsabilidad.
+- Meshtastic® es una marca registrada de Meshtastic LLC.
+- Este sitio no está afiliado ni respaldado por el proyecto Meshtastic.
 
 [⬅️ Volver al menú principal](README.md)
