@@ -33,3 +33,5 @@ Modular PCB designed for Meshtastic projects, sized 120x70 mm, to be mounted as 
 - Environmental telemetry, two op.: a) BME280 3.3V b) AHT20-BMP280
 - GPS module: ATGM336H, for node time synchronization, with Mosfet control
 - OLED display: female connector for e.g. SSD1306
+
+[⬅️ Volver al menú principal](README.md)
