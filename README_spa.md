@@ -35,11 +35,11 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 - Módulo GPS: ATGM336H para sincronización horaria de nodos, con control MOSFET.
 - Pantalla OLED: conector hembra para, por ejemplo, SSD1306.
 
-**Intrucciones para solicitar PCB**
+## Intrucciones para solicitar PCB
 
 Puedes pedir las PCBs directamente en jlcpcb.com utilizando el archivo gerber de este repositorio
 
-**Lista de materiales (BOM)**
+## Lista de materiales (BOM)
 
 No hay ninguna filiación con los enlaces indicados. Solo se proporciona,a modo de ejemplo, para facilitar la selección de componentes.
 
@@ -70,7 +70,7 @@ Se supone que tienes cierta experiencia soldando componentes electrónicos.
 12. Suelda el módulo de lecturas medioambientales y comprueba su funcionamiento. Apaga el nodo y quita la batería.
 13. Suelda el resto de componentes opcionales y comprueba su funcionamiento.
 
-**Aviso legal**
+## Aviso legal
 - Los componentes de software de [Meshtastic](https://meshtastic.org/) se publican bajo diversas licencias. Consulte [GitHub](https://github.com/meshtastic) para obtener más información.
 - No se ofrece garantía; use este diseño bajo su propia responsabilidad.
 - Meshtastic® es una marca registrada de Meshtastic LLC.
