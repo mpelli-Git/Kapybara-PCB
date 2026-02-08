@@ -35,16 +35,27 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 - Módulo GPS: ATGM336H para ajuste y sincronización de la hora del nodo, con control MOSFET (canal-N).
 - Pantalla OLED: conector hembra para, por ejemplo, SSD1306.
 
-## Imágenes
-<div align="center">
-  <img src="images/PCB 3D 2026-01-11.jpg" width="45%" />
-  <img src="PCB Kapybara AMSN - GPS.jpeg" width="45%" />
-  <img src="PCB Kapybara AMSN - OLED displayl.jpeg" width="45%" />
-</div>
+
+### 🖼️ Galería de imágenes
+
+**📸 PCB**
+
+| Front View | Back View |
+| :---: | :---: |
+| <img src="Images/PCB_Front_2026-01-11.jpg" width="400"> | <img src="Images/PCB_Back_2026-01-11.jpg" width="400"> |
+
+
+**📸 Montaje**
+
+| 3D| GPS | Display |
+| :---: | :---: | :---: |
+| <img src="Images/PCB_3D_2026-01-11.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_GPS.jpeg" width="280"> | <img src="Images/PCB_Kapybara_AMSN_OLED_displayl.jpeg" width="300"> |
+| *Vista 3D del diseño* | *Módulo GPS integrado* | *Prueba de pantalla OLED* |
+
 
 ## Intrucciones para solicitar PCB
 
-Puedes pedir las PCBs directamente en jlcpcb.com utilizando el archivo gerber de este repositorio
+Puedes pedir las PCBs directamente en [JLCPCB](https://jlcpcb.com/) utilizando el archivo gerber de este repositorio o a cualquier otro fabricante.
 
 ## Lista de materiales (BOM)
 
@@ -52,6 +63,7 @@ No hay ninguna filiación con los enlaces indicados. Solo se proporciona,a modo 
 
 | Parte | Cant. | Coste | Origen |   Notas   |
 |-------|-------|-------|--------|-----------|
+*⚠️ TODO: Añadir aquí listado de materiales.*
 
 ## 🛠 Instrucciones de Montaje
 
@@ -76,6 +88,30 @@ Se supone que tienes cierta experiencia soldando componentes electrónicos.
 11. Sigue con el montaje. Suelda el MPPT CN3791. Si no has montado el diodo D1 haz un puente. Conecta el panel solar a su bornero y comprueba su funcionamiento. Apaga el nodo y quita la batería.
 12. Suelda el módulo de lecturas medioambientales y comprueba su funcionamiento. Apaga el nodo y quita la batería.
 13. Suelda el resto de componentes opcionales y comprueba su funcionamiento.
+
+
+## 🚦 Estado del Proyecto
+
+| Función / Módulo | Estado| Notas |
+| :--- | :---: | :--- |
+| **Aliment. batería (3.7V)** | 🟢 OK | BMS Ok. |
+| **Aliment. (3.3V)** | 🟢 OK | Probado inirectamnet por sensores Ok. |
+| **nRF52840** | 🟢 OK | Bootloader flaseado y firmware cargado, BLE Ok. |
+| **LoRa (HT-RA62)** | 🟢 OK  | Pruebas emisión/recepción Ok. |
+| **CN3791** | 🟢 OK  | Carga batería mediante panel solar Ok. |
+| **BME280** | 🟢 OK  | Lecturas medioambientales Ok en APP. |
+| **INA3221** | 🟢 OK  | Lecturas eléctricas Ok en APP. |
+| **AHT20-BMP280** | ⚪ PEND. | Falta por probar. No se esperan sorpresas. |
+| **ATGM336H** | 🟡 80%  | Lectura GPS Ok pero pendiente ctrl. Mosfet. |
+| **TLV840** | 🔴 NOK | Se necesita replantear el diseño del supervisor. |
+
+**Leyenda:**
+🟢 `Probado & Funcionando` | 🔴 `Fallo / Rediseñar` | 🟡 `En progreso` | ⚪ `Pendiente de probarse`
+
+## 📋 Pendiente Github
+- [ ] *Actualizar ENG*
+- [ ] *Subir los archivos Gerber actualizados si pruebas OK!*
+- [ ] *Enlazar a sección de configuración de Meshtastic*
 
 ## Aviso legal
 - Los componentes de software de [Meshtastic](https://meshtastic.org/) se publican bajo diversas licencias. Consulte [GitHub](https://github.com/meshtastic) para obtener más información.
