@@ -23,17 +23,24 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 - Batería: 18650 con soporte para PCB, opciones SMD o THT.
 - BMS, dos opciones: a) PCB frontal, si el soporte de la batería lo permite, b) PCB posterior.
 - Caja de AliExpress: artículo 1005007587120013 [Modelo de caja AE gris 150x100x70](https://aliexpress.com/item/1005007587120013.html)
-- Panel solar: usar uno de 6 V y al menos 1,5 W. Estoy usando un panel solar AE.
+- Panel solar: usar uno de 6 V y al menos 1,5 W. Estoy usando un [panel solar de 17.4 x 12 cm](https://es.aliexpress.com/item/1005009983374214.html) de AliExpress.
 
 **Opcional**
 - Alimentación: Fusible SMD para protección de la fuente de alimentación, con portafusibles SMD.
 - Porcentaje de batería: R1+R2 para medición del voltaje de la batería por el ADC MCU.
 - Filtraje: Los condensadores C1 y C2 no son necesarios, pero se reserva este espacio en la PCB por si conviniera filtrar tensión de alimentación.
 - Telemetría de potencia: INA3221 medidor de corriente y voltaje de 3 canales.
-- Supervisión del voltaje de la batería: TLV840 para reiniciar el MCU en caso de subtensión y mitigar caídas de tensión.
+- Supervisión del voltaje de la batería: TLV840 para reiniciar el MCU en caso de subtensión y mitigar efectos de caídas de tensión (brownout).
 - Telemetría ambiental, sensores de temperatura, humedad y presión; dos opciones: a) BME280 3.3 V b) AHT20-BMP280.
-- Módulo GPS: ATGM336H para sincronización horaria de nodos, con control MOSFET.
+- Módulo GPS: ATGM336H para ajuste y sincronización de la hora del nodo, con control MOSFET (canal-N).
 - Pantalla OLED: conector hembra para, por ejemplo, SSD1306.
+
+## Imágenes
+<div align="center">
+  <img src="images/PCB 3D 2026-01-11.jpg" width="45%" />
+  <img src="PCB Kapybara AMSN - GPS.jpeg" width="45%" />
+  <img src="PCB Kapybara AMSN - OLED displayl.jpeg" width="45%" />
+</div>
 
 ## Intrucciones para solicitar PCB
 
