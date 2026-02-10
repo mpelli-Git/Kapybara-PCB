@@ -62,7 +62,9 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 
 ## Intrucciones para solicitar PCB
 
-Puedes pedir las PCBs directamente en [JLCPCB](https://jlcpcb.com/) utilizando el archivo gerber de este repositorio o a cualquier otro fabricante.
+Puedes pedir las PCBs directamente en [JLCPCB](https://jlcpcb.com/) o a cualquier otro fabricante, utilizando el archivo gerber de este repositorio:
+[v0 Gerber PCB for testing](Gerbers/Gerber_Kapybara_PCB_AMSN_v0_2026-01-11.zip)
+
 
 ## Lista de materiales (BOM)
 
@@ -102,14 +104,14 @@ Se supone que tienes cierta experiencia soldando componentes electrónicos.
 | Función / Módulo | Estado| Notas |
 | :--- | :---: | :--- |
 | **Aliment. batería (3.7V)** | 🟢 OK | BMS Ok. |
-| **Aliment. (3.3V)** | 🟢 OK | Probado inirectamnet por sensores Ok. |
+| **Aliment. (3.3V)** | 🟢 OK | Probado indirectamnet por sensores Ok. |
 | **nRF52840** | 🟢 OK | Bootloader flaseado y firmware cargado, BLE Ok. |
 | **LoRa (HT-RA62)** | 🟢 OK  | Pruebas emisión/recepción Ok. |
 | **CN3791** | 🟢 OK  | Carga batería mediante panel solar Ok. |
 | **BME280** | 🟢 OK  | Lecturas medioambientales Ok en APP. |
 | **INA3221** | 🟢 OK  | Lecturas eléctricas Ok en APP. |
 | **AHT20-BMP280** | ⚪ PEND. | Falta por probar. No se esperan sorpresas. |
-| **ATGM336H** | 🟡 80%  | Lectura GPS Ok pero pendiente ctrl. Mosfet. |
+| **ATGM336H** | 🟢 OK  | Lectura GPS Ok con ctrl. Mosfet AO3400 |
 | **TLV840** | 🔴 NOK | Se necesita replantear el diseño del supervisor. |
 
 **Leyenda:**
@@ -117,7 +119,7 @@ Se supone que tienes cierta experiencia soldando componentes electrónicos.
 
 ## 📋 Pendiente Github
 - [ ] *Actualizar ENG*
-- [ ] *Subir los archivos Gerber actualizados si pruebas OK!*
+- [x] *Subir los archivos Gerber actualizados si pruebas OK!*
 - [ ] *Enlazar a sección de configuración de Meshtastic*
 
 ## Aviso legal
