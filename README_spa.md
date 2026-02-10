@@ -54,10 +54,10 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 
 **📸 Montaje**
 
-| 3D| GPS | Display |
+| 3D| PCB | Caja |
 | :---: | :---: | :---: |
-| <img src="Images/PCB_3D_2026-01-11.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_GPS.jpeg" width="280"> | <img src="Images/PCB_Kapybara_AMSN_OLED_displayl.jpeg" width="300"> |
-| *Vista 3D del diseño* | *Módulo GPS integrado* | *Prueba de pantalla OLED* |
+| <img src="Images/PCB_3D_2026-01-11.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_GPS+OLED.jpeg" width="280"> | <img src="Images/PCB_Kapybara_AMSN_box.jpeg" width="300"> |
+| *Vista 3D del diseño* | *Módulo GPS + OLED* | *Prueba espacio caja* |
 
 
 ## Intrucciones para solicitar PCB
