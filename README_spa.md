@@ -70,9 +70,29 @@ Puedes pedir las PCBs directamente en [JLCPCB](https://jlcpcb.com/) o a cualquie
 
 No hay ninguna filiación con los enlaces indicados. Solo se proporciona,a modo de ejemplo, para facilitar la selección de componentes.
 
-| Parte | Cant. | Coste | Origen |   Notas   |
+*Total aprox. a feb. 2026= 23 €*
+
+| Parte | Cant. | Coste | Enlace |   Notas   |
 |-------|-------|-------|--------|-----------|
-*⚠️ TODO: Añadir aquí listado de materiales.*
+|ProMicro nRF52840|1|2,7 €|[Op1](https://es.aliexpress.com/item/1005006271881076.html)|[Op2](https://es.aliexpress.com/item/1005007738886550.html)|
+|HT-RA62|1|5,5 €|[Op1](https://es.aliexpress.com/item/1005008363549136.html)|[Op2](https://es.aliexpress.com/item/1005008626582098.html)|
+|CN-3791|1|2,3 €|[Op1](https://es.aliexpress.com/item/1005007355378997.html)|6V o 12 V según panel solar|
+|INA3221|1|1,3 €|[Op1](https://es.aliexpress.com/item/1005007723353245.html)|Fijarse orden CH1, CH2,CH3 de izda. a dcha.|
+|BME280-3,3|1|2,5 €|[Op1](https://es.aliexpress.com/item/1005004527984343.html)|Nota: BME= P&T&H; BMP= P&T|
+|AHT20 + BMP280|1|1,2 €|[Op1](https://es.aliexpress.com/item/1005007702473893.html)|Alternativa a BME|
+|BMS|1|0,17 €|[Op1](https://es.aliexpress.com/item/1005005968623999.html)|Pack de 10 uds.|
+|GPS ATGM336H|1|5,9 €|[Op1](https://es.aliexpress.com/item/4001147538089.html)||
+|MosFet AO3400|1|0,02 €|[Op1](https://es.aliexpress.com/item/1005006142488372.html)|O equival. canal-N; 100 uds|
+|TLV840|1|0,78 €|[Op1](https://es.aliexpress.com/item/1005010444348808.html)|TLV840MADL30DBVRQ1; 10 uds|
+|Soport.Bat.|1|0,95 €|[Op1 SMD](https://es.aliexpress.com/item/1005005301516019.html)|[Op2 THT](https://es.aliexpress.com/item/1005007051308086.html)|
+|Puls.SMD|2|0,04 €|[Op1](https://es.aliexpress.com/item/4001125532910.html)|100 uds|
+|Bornero|1|0,29 €|[Op1](https://es.aliexpress.com/item/1005003556955422.html)|2 pin 5 uds|
+|Fusible|1|0,12 €|[Op1](https://es.aliexpress.com/item/1005002366334753.html)|1A 10 uds|
+|Portafusible|1|0,14 €| "  " |1808 Socket 10 uds|
+|Resist.|3|0,03 €|[Op1](https://es.aliexpress.com/item/1005006044241818.html)|1206 pack uds|
+|Cond.|2|0,03 €|[Op1](https://es.aliexpress.com/item/1005002528281793.html)|1206 100 nF 100 uds|
+|Diodo|1|0,02 €|[Op1](https://es.aliexpress.com/item/1005009947560623.html)|SS34 SMA 50 uds|
+
 
 ## 🛠 Instrucciones de Montaje
 
@@ -119,6 +139,7 @@ Se supone que tienes cierta experiencia soldando componentes electrónicos.
 
 ## 📋 Pendiente Github
 - [ ] *Actualizar ENG*
+- [x] *BOM lista material*
 - [x] *Subir los archivos Gerber actualizados si pruebas OK!*
 - [ ] *Enlazar a sección de configuración de Meshtastic*
 
