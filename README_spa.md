@@ -54,11 +54,13 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 
 **📸 Montaje**
 
-| 3D| PCB | Caja |
+| Vista 3D | PCB | Caja |
 | :---: | :---: | :---: |
 | <img src="Images/PCB_3D_2026-01-11.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_GPS+OLED.jpeg" width="280"> | <img src="Images/PCB_Kapybara_AMSN_box.jpeg" width="300"> |
-| *Vista 3D del diseño* | *Módulo GPS + OLED* | *Prueba espacio caja* |
 
+| BMS Front| PCB Back |
+| :---: | :---: |
+| <img src="Images/PCB_Kapybara_AMSN_front_BMS.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_back_BMS_detail.jpeg" width="300"> |
 
 ## Intrucciones para solicitar PCB
 
@@ -112,13 +114,15 @@ Se supone que tienes cierta experiencia soldando componentes electrónicos.
 6. Suelda el portafusibles y fusible o puentea los pads del fusible si no lo vas a montar.
 7. Suelda el BMS, soporte de la batería e interruptores.
 8. Suelda el INA3221 o, si no lo vas a montar, haz un puente entre los pads (+) y (-) de cada canal para continuar la serie y dar continuidad.
-9. Asegurate que no está el nodo alimentado por USB. Inserta la batería 18650 y conecta el interruptor de alimentación en "ON".
-10. Comprueba nuevamente el punto 4. Mide tensiones Vcc que debe dar unos 3,3 V. Apaga el nodo y quita la batería.
-11. Sigue con el montaje. Suelda el MPPT CN3791. Si no has montado el diodo D1 hazle un puente.
-12. Conecta el panel solar a su bornero, comprueba su funcionamiento y que carga la batería. Apaga el nodo y quita la batería.
-13. Suelda el módulo de lecturas medioambientales y comprueba su funcionamiento. Apaga el nodo y quita la batería.
-14. Suelda el resto de componentes opcionales y comprueba su funcionamiento. Para el GPS y Display puedes utilizar conectores hembra o cortar una tira de pines según necesites.
-15. Mide la tensión de batería y ajusta el valor en la APP de "ADC Multiplier override", inicialmente a 1.551, para que indique el mismo valor en la APP. 
+9. Si utlizas INA3221, recuerda soldar los pads marcados como SDA en el lateral izquierdo, para que sea reconocido por el firmware.
+10. Asegurate que no está el nodo alimentado por USB. Inserta la batería 18650 y conecta el interruptor de alimentación en "ON".
+11. Comprueba nuevamente el punto 4. Mide tensiones Vcc que debe dar unos 3,3 V. Apaga el nodo y quita la batería.
+12. Sigue con el montaje. Suelda el MPPT CN3791. Si no has montado el diodo D1 hazle un puente.
+13. Conecta el panel solar a su bornero, comprueba su funcionamiento y que carga la batería. Apaga el nodo y quita la batería.
+14. Suelda el módulo de lecturas medioambientales y comprueba su funcionamiento. Apaga el nodo y quita la batería.
+15. Suelda el resto de componentes opcionales y comprueba su funcionamiento. Para el GPS y Display puedes utilizar conectores hembra o cortar una tira de pines según necesites.
+16. Si utilizas GPS, recuerda configurar en la APP los siguientes GPIOS: RX= 20, TX= 22, EN= 24
+17. Mide la tensión de batería y ajusta el valor en la APP de "ADC Multiplier override", inicialmente a 1.551, para que indique el mismo valor en la APP. 
 
 
 ## 🚦 Estado del Proyecto
