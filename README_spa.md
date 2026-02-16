@@ -47,7 +47,7 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 
 ## 📄  Esquema
 
-[![Kapybara Schematic](Images/Preview_sch.jpg)](Docs/Schematic_Kapybara-PCB_v0_2026-01-12.pdf)
+[![Kapybara Schematic](Images/Preview_sch.jpg)](Docs/Schematic_Kapybara-PCB_v0_2026-02-16.pdf)
 
 *Haz clic en la imagen para abrir el PDF*
 
