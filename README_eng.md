@@ -145,6 +145,7 @@ It is assumed you have some experience soldering electronic components.
 ## 📋 Node configuration
 - Follow the Getting Started guide, where you can find the [basic node configuration](https://meshtastic.es/docs/primeros-pasos/#configurar-tu-dispositivo)
 - Remember to adjust the "ADC Multiplier override" appropriately and assign the corresponding GPIOs to the GPS.
+- You can get help and resolve your doubts in the [Meshtastic Spain group Telegram](https://t.me/meshtastic_esp) or find your local group in the following [list](https://meshtastic.org/docs/community/local-groups/).
 
 ## Legal Disclaimer
 - [Meshtastic](https://meshtastic.org/) software components are released under various licenses. See [GitHub](https://github.com/meshtastic) for more info.
