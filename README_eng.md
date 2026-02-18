@@ -55,9 +55,13 @@ Modular PCB designed for Meshtastic projects, 120 x 70 mm, for mounting as a sta
 | :---: | :---: | :---: |
 | <img src="Images/PCB_3D_2026-01-11.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_GPS+OLED.jpeg" width="280"> | <img src="Images/PCB_Kapybara_AMSN_box.jpeg" width="300"> |
 
-| BMS Front| PCB Back |
+| BMS Front| PCB Back | INA SDA jumper |
+| :---: | :---: | :---: |
+| <img src="Images/PCB_Kapybara_AMSN_front_BMS.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_back_BMS_detail.jpeg" width="300"> | <img src="Images/Kapybara-INA_SDA_solder.jpeg" width="300"> |
+
+|APP INA channels  bat.discharge | APP INA channels battery charge |
 | :---: | :---: |
-| <img src="Images/PCB_Kapybara_AMSN_front_BMS.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_back_BMS_detail.jpeg" width="300"> |
+| <img src="Images/Kapybara-INA_chan_01.jpeg" width="300"> | <img src="Images/Kapybara-INA_chan_02.jpeg" width="300"> |
 
 ## How to order the PCB
 
@@ -138,11 +142,9 @@ It is assumed you have some experience soldering electronic components.
 **Legend:**
 🟢 `Tested & Working` | 🔴 `Failed / Redesign` | 🟡 `Work in Progress` | ⚪ `Pending Testing`
 
-## 📋 Github To-Do
-- [x] *Update ENG (this file)*
-- [x] *BOM Materials list*
-- [x] *Upload updated Gerber files if tests are OK!*
-- [ ] *Link to Meshtastic configuration section*
+## 📋 Node configuration
+- Follow the Getting Started guide, where you can find the [basic node configuration](https://meshtastic.es/docs/primeros-pasos/#configurar-tu-dispositivo)
+- Remember to adjust the "ADC Multiplier override" appropriately and assign the corresponding GPIOs to the GPS.
 
 ## Legal Disclaimer
 - [Meshtastic](https://meshtastic.org/) software components are released under various licenses. See [GitHub](https://github.com/meshtastic) for more info.
