@@ -149,6 +149,7 @@ Se supone que tienes cierta experiencia soldando componentes electrónicos.
 ## 📋 Configuración del nodo
 - Sigue la guía de primeros pasos, en la que puedes encontrar la [configuración básica del nodo](https://meshtastic.es/docs/primeros-pasos/#configurar-tu-dispositivo)
 - Recuerda ajustar convenientemenet el "ADC Multiplier override" y asignar los GPIOs correspondientes al GPS.
+- Puedes obtener ayuda y resolver tus dudas en el [Telegram del grupo Meshtastic España](https://t.me/meshtastic_esp) o busca tu grupo local en la siguiente [lista](https://meshtastic.org/docs/community/local-groups/).
 
 ## Aviso legal
 - Los componentes de software de [Meshtastic](https://meshtastic.org/) se publican bajo diversas licencias. Consulte [GitHub](https://github.com/meshtastic) para obtener más información.
