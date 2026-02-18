@@ -58,10 +58,13 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 | :---: | :---: | :---: |
 | <img src="Images/PCB_3D_2026-01-11.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_GPS+OLED.jpeg" width="280"> | <img src="Images/PCB_Kapybara_AMSN_box.jpeg" width="300"> |
 
-| BMS Front| PCB Back |
-| :---: | :---: |
-| <img src="Images/PCB_Kapybara_AMSN_front_BMS.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_back_BMS_detail.jpeg" width="300"> |
+| BMS Front| PCB Back | INA puente SDA |
+| :---: | :---: | :---: |
+| <img src="Images/PCB_Kapybara_AMSN_front_BMS.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_back_BMS_detail.jpeg" width="300"> | <img src="Images/Kapybara-INA_SDA_solder.jpeg" width="300"> |
 
+| APP canales INA bat.descarga | APP canales INA bat.carga |
+| :---: | :---: |
+| <img src="Images/Kapybara-INA_chan_01.jpeg" width="300"> | <img src="Images/Kapybara-INA_chan_02.jpeg" width="300"> |
 ## Intrucciones para solicitar PCB
 
 Puedes pedir las PCBs directamente en [JLCPCB](https://jlcpcb.com/) o a cualquier otro fabricante, utilizando el archivo gerber de este repositorio:
@@ -143,11 +146,9 @@ Se supone que tienes cierta experiencia soldando componentes electrónicos.
 **Leyenda:**
 🟢 `Probado & Funcionando` | 🔴 `Fallo / Rediseñar` | 🟡 `En progreso` | ⚪ `Pendiente de probarse`
 
-## 📋 Pendiente Github
-- [ ] *Actualizar ENG*
-- [x] *BOM lista material*
-- [x] *Subir los archivos Gerber actualizados si pruebas OK!*
-- [ ] *Enlazar a sección de configuración de Meshtastic*
+## 📋 Configuración del nodo
+- Sigue la guía de primeros pasos, en la que puedes encontrar la [configuración básica del nodo](https://meshtastic.es/docs/primeros-pasos/#configurar-tu-dispositivo)
+- Recuerda ajustar convenientemenet el "ADC Multiplier override" y asignar los GPIOs correspondientes al GPS.
 
 ## Aviso legal
 - Los componentes de software de [Meshtastic](https://meshtastic.org/) se publican bajo diversas licencias. Consulte [GitHub](https://github.com/meshtastic) para obtener más información.
