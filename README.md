@@ -1,5 +1,13 @@
 # Kapybara-PCB for Meshtastic 🐾
 
+<div align="center">
+
+| PCB 3D | Demo |
+| :---: | :---: |
+| <img src="Images/PCB_3D_2026-01-11.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_box.jpeg" width="300"> |
+
+</div>
+
 - EN: Modular PCB designed for Meshtastic projects, sized 120x70 mm, to be mounted as a standalone solar node in an outdoor enclosure (AliExpress box). Many modules are optional, at the user's discretion.
     > [!IMPORTANT]
     > **Project Status:** This hardware is currently a work-in-progress. I am not accepting Pull Requests until the first physical prototype is verified.
