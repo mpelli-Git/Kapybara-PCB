@@ -1,5 +1,4 @@
 # Kapybara-PCB for Meshtastic
-Modular printed circuit board designed for Meshtastic projects, measuring 120 x 70 mm, for assembly as a standalone solar node in an outdoor enclosure (AliExpress box). Many modules are optional, at the user's choice.
 
 ## Description
 
