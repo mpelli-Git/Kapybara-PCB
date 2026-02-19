@@ -1,5 +1,4 @@
 # Kapybara-PCB para Meshtastic
-Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 70 mm, para montaje como nodo solar independiente en una carcasa exterior (caja de AliExpress). Muchos módulos son opcionales, a elección del usuario.
 
 ## Descripción
 
