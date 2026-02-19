@@ -1,17 +1,6 @@
 # Kapybara-PCB for Meshtastic
 Modular printed circuit board designed for Meshtastic projects, measuring 120 x 70 mm, for assembly as a standalone solar node in an outdoor enclosure (AliExpress box). Many modules are optional, at the user's choice.
 
-## License
-
-This project is licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S)**.
-
-### What does this mean?
-- **Share:** You can download, modify, and manufacture this PCB.
-- **Attribution:** You must give appropriate credit to the original author (mpelli-Git).
-- **Reciprocity:** If you make modifications or improvements to the design and distribute them, you **must** license your contributions under the same CERN-OHL-S license. This ensures the entire community benefits from the improvements.
-
-You can find the full license text in the [LICENSE](LICENSE) file or visit [https://ohwr.org/cern_ohl_s_v2.txt](https://ohwr.org/cern_ohl_s_v2.txt) for more details.
-
 ## Description
 
 Modular PCB designed for Meshtastic projects, 120 x 70 mm, for mounting as a standalone solar node in an outdoor enclosure (AliExpress item 1005007587120013). Many modules are optional, according to user needs.
@@ -34,6 +23,24 @@ Modular PCB designed for Meshtastic projects, 120 x 70 mm, for mounting as a sta
 - Environmental Telemetry: Temperature, humidity, and pressure sensors; two options: a) BME280 3.3V b) AHT20-BMP280.
 - GPS Module: ATGM336H for node time synchronization, with MOSFET control (N-channel).
 - OLED Display: Female connector for, e.g., SSD1306.
+
+## 🚦 Project Status
+
+| Function / Module | Status | Notes |
+| :--- | :---: | :--- |
+| **Battery Power (3.7V)** | 🟢 OK | BMS Ok. |
+| **Power Supply (3.3V)** | 🟢 OK | Tested indirectly via sensors Ok. |
+| **nRF52840** | 🟢 OK | Bootloader flashed and firmware loaded, BLE Ok. |
+| **LoRa (HT-RA62)** | 🟢 OK | TX/RX tests Ok. |
+| **CN3791** | 🟢 OK | Battery charging via solar panel Ok. |
+| **BME280** | 🟢 OK | Environmental readings Ok in App. |
+| **INA3221** | 🟢 OK | Electrical readings Ok in App. |
+| **AHT20-BMP280** | ⚪ PEND. | Testing pending. No surprises expected. |
+| **ATGM336H** | 🟢 OK | GPS reading Ok with AO3400 MOSFET ctrl. |
+| **TLV840** | 🔴 NOK | Supervisor design needs to be reconsidered. |
+
+**Legend:**
+🟢 `Tested & Working` | 🔴 `Failed / Redesign` | 🟡 `Work in Progress` | ⚪ `Pending Testing`
 
 ### 🖼️ Image Gallery
 
@@ -124,24 +131,6 @@ It is assumed you have some experience soldering electronic components.
 16. If using GPS, remember to configure the following GPIOs in the App: RX= 20, TX= 22, EN= 24
 17. Measure the battery voltage and adjust the "ADC Multiplier override" value in the App (initially set to 1.551) so it matches the App reading.
 
-## 🚦 Project Status
-
-| Function / Module | Status | Notes |
-| :--- | :---: | :--- |
-| **Battery Power (3.7V)** | 🟢 OK | BMS Ok. |
-| **Power Supply (3.3V)** | 🟢 OK | Tested indirectly via sensors Ok. |
-| **nRF52840** | 🟢 OK | Bootloader flashed and firmware loaded, BLE Ok. |
-| **LoRa (HT-RA62)** | 🟢 OK | TX/RX tests Ok. |
-| **CN3791** | 🟢 OK | Battery charging via solar panel Ok. |
-| **BME280** | 🟢 OK | Environmental readings Ok in App. |
-| **INA3221** | 🟢 OK | Electrical readings Ok in App. |
-| **AHT20-BMP280** | ⚪ PEND. | Testing pending. No surprises expected. |
-| **ATGM336H** | 🟢 OK | GPS reading Ok with AO3400 MOSFET ctrl. |
-| **TLV840** | 🔴 NOK | Supervisor design needs to be reconsidered. |
-
-**Legend:**
-🟢 `Tested & Working` | 🔴 `Failed / Redesign` | 🟡 `Work in Progress` | ⚪ `Pending Testing`
-
 ## 📋 Node configuration
 - Follow the Getting Started guide, where you can find the [basic node configuration](https://meshtastic.es/docs/primeros-pasos/#configurar-tu-dispositivo)
 - Remember to adjust the "ADC Multiplier override" appropriately and assign the corresponding GPIOs to the GPS.
@@ -152,5 +141,16 @@ It is assumed you have some experience soldering electronic components.
 - No warranty is offered; use this design at your own risk.
 - Meshtastic® is a registered trademark of Meshtastic LLC.
 - This site is not affiliated with or endorsed by the Meshtastic project.
+
+## License
+
+This project is licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S)**.
+
+### What does this mean?
+- **Share:** You can download, modify, and manufacture this PCB.
+- **Attribution:** You must give appropriate credit to the original author (mpelli-Git).
+- **Reciprocity:** If you make modifications or improvements to the design and distribute them, you **must** license your contributions under the same CERN-OHL-S license. This ensures the entire community benefits from the improvements.
+
+You can find the full license text in the [LICENSE](LICENSE) file or visit [https://ohwr.org/cern_ohl_s_v2.txt](https://ohwr.org/cern_ohl_s_v2.txt) for more details.
 
 [⬅️ Back to main menu](README.md)
