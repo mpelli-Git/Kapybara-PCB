@@ -67,9 +67,10 @@ Placa de circuito impreso modular diseñada para proyectos Meshtastic, de 120 x 
 | :---: | :---: | :---: |
 | <img src="Images/PCB_Kapybara_AMSN_front_BMS.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_back_BMS_detail.jpeg" width="300"> | <img src="Images/Kapybara-INA_SDA_solder.jpeg" width="300"> |
 
-| APP canales INA bat.descarga | APP canales INA bat.carga |
-| :---: | :---: |
-| <img src="Images/Kapybara-INA_chan_01.jpeg" width="300"> | <img src="Images/Kapybara-INA_chan_02.jpeg" width="300"> |
+| Detalle hilera pines | APP canales INA bat.descarga | APP canales INA bat.carga |
+| :---: | :---: | :---: |
+| <img src="Images/PCB_Kapybara_AMSN_Pine_header.jpg" width="300"> | <img src="Images/Kapybara-INA_chan_01.jpeg" width="300"> | <img src="Images/Kapybara-INA_chan_02.jpeg" width="300"> |
+
 ## Intrucciones para solicitar PCB
 
 Puedes pedir las PCBs directamente en [JLCPCB](https://jlcpcb.com/) o a cualquier otro fabricante, utilizando el archivo gerber de este repositorio:
