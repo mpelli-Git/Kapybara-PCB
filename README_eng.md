@@ -65,9 +65,9 @@ Modular PCB designed for Meshtastic projects, 120 x 70 mm, for mounting as a sta
 | :---: | :---: | :---: |
 | <img src="Images/PCB_Kapybara_AMSN_front_BMS.jpg" width="300"> | <img src="Images/PCB_Kapybara_AMSN_back_BMS_detail.jpeg" width="300"> | <img src="Images/Kapybara-INA_SDA_solder.jpeg" width="300"> |
 
-|APP INA channels  bat.discharge | APP INA channels battery charge |
-| :---: | :---: |
-| <img src="Images/Kapybara-INA_chan_01.jpeg" width="300"> | <img src="Images/Kapybara-INA_chan_02.jpeg" width="300"> |
+| Pin header detail |APP INA channels  bat.discharge | APP INA channels battery charge |
+| :---: | :---: | :---: |
+| <img src="Images/PCB_Kapybara_AMSN_Pine_header.jpg" width="300"> | <img src="Images/Kapybara-INA_chan_01.jpeg" width="300"> | <img src="Images/Kapybara-INA_chan_02.jpeg" width="300"> |
 
 ## How to order the PCB
 
